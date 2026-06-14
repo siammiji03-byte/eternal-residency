@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-teal: #1f6757;
+  --color-teal-dark: #17503f;
+  --color-teal-light: #e8f4f0;
+  --color-gold: #c9a03a;
+  --color-cream: #fafaf7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: #1a1a1a;
+}
+
+/* Stripe Elements overrides */
+.StripeElement {
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.StripeElement--focus {
+  border-color: var(--color-teal);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 103, 87, 0.1);
+}
+
+.StripeElement--invalid {
+  border-color: #ef4444;
+}
